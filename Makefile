@@ -1,5 +1,5 @@
 CFLAGS = -g
-LDFLAGS = -lsndfile
+LDFLAGS = -lsndfile -lfftw -lm
 
 fft: fft.c
 	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $<
